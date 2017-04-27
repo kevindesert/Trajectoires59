@@ -103,6 +103,45 @@ textarea {
 /*KEVIN*/
 
 
+/*COMMON RULES*/
+
+html {
+    margin: 0;
+    padding: 0;
+}
+
+.packagenavbar ul {
+    list-style-type: none;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+.packagenavbar a {
+    text-decoration: none;
+}
+
+.packagenavbar li {
+    text-decoration: none;
+    color: white;
+    background-color: #6ad5b1;
+    margin: 1em;
+    margin-right: 3em;
+    border-radius: 5px;
+}
+
+.packagenavbar li:hover {
+    color: black;
+    background-color: #B5B6B0;
+}
+
+.packColor, .galeriearticle {
+    background-color: #66CDAA;
+    border: 1px solid #B5B6B0;
+    border-bottom: none;
+}
+
+
 /*PAGE PACKAGE*/
 
 
@@ -124,12 +163,6 @@ h2 {
 h3 {
     font-size: 16px;
     text-align: center;
-}
-
-.packColor, .galeriearticle {
-    background-color: #66CDAA;
-    border: 1px solid #B5B6B0;
-    border-bottom: none;
 }
 
 .packColor2 {
@@ -190,6 +223,24 @@ button {
 
 
 /*END OF THE PAGE PACKAGE 2*/
+
+
+/*PAGE PACKAGE 3*/
+
+.selfgarage p {
+    width: 90%;
+    text-align: center;
+    margin: auto;
+}
+
+
+/*END OF THE PAGE PACKAGE 3*/
+
+
+/*PAGE PACKAGE 4*/
+
+
+/*END OF THE PAGE PACKAGE 4*/
 
 
 /*PAGE PACKAGE*/
