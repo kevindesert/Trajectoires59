@@ -1,10 +1,12 @@
 /*! HTML5 Boilerplate v5.3.0 | MIT License | https://html5boilerplate.com/ */
 
+
 /*
  * What follows is the result of much research on cross-browser styling.
  * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
  * Kroc Camen, and the H5BP dev community and team.
  */
+
 
 /* ==========================================================================
    Base styles: opinionated defaults
@@ -15,6 +17,7 @@ html {
     font-size: 1em;
     line-height: 1.4;
 }
+
 
 /*
  * Remove text-shadow in selection highlight:
@@ -34,6 +37,7 @@ html {
     text-shadow: none;
 }
 
+
 /*
  * A better looking default horizontal rule
  */
@@ -47,20 +51,17 @@ hr {
     padding: 0;
 }
 
+
 /*
  * Remove the gap between audio, canvas, iframes,
  * images, videos and the bottom of their containers:
  * https://github.com/h5bp/html5-boilerplate/issues/440
  */
 
-audio,
-canvas,
-iframe,
-img,
-svg,
-video {
+audio, canvas, iframe, img, svg, video {
     vertical-align: middle;
 }
+
 
 /*
  * Remove default fieldset styles.
@@ -72,6 +73,7 @@ fieldset {
     padding: 0;
 }
 
+
 /*
  * Allow only vertical resizing of textareas.
  */
@@ -79,6 +81,7 @@ fieldset {
 textarea {
     resize: vertical;
 }
+
 
 /* ==========================================================================
    Browser Upgrade Prompt
@@ -91,130 +94,144 @@ textarea {
     padding: 0.2em 0;
 }
 
+
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
 
+
 /*KEVIN*/
+
+
 /*PAGE PACKAGE*/
 
 
 /*PAGE PACKAGE 1*/
-h1
-{
-  width: 60%;
-  margin: auto;
-  text-align: center;
+
+h1 {
+    width: 60%;
+    margin: auto;
+    text-align: center;
 }
-h2
-{
-  font-size: 18px;
-  text-align: center;
-  color: #66CDAA;
-  text-decoration: underline;
+
+h2 {
+    font-size: 18px;
+    text-align: center;
+    color: #66CDAA;
+    text-decoration: underline;
 }
-h3
-{
-  font-size: 16px;
-  text-align: center;
+
+h3 {
+    font-size: 16px;
+    text-align: center;
 }
-.packColor, .galeriearticle
-{
-  background-color: #66CDAA;
-  border: 1px solid #B5B6B0;
-  border-bottom: none;
+
+.packColor, .galeriearticle {
+    background-color: #66CDAA;
+    border: 1px solid #B5B6B0;
+    border-bottom: none;
 }
-.packColor2
-{
-  border: 1px solid;
-  border-bottom: none;
+
+.packColor2 {
+    border: 1px solid;
+    border-bottom: none;
 }
-img
-{
-  width: 100%;
+
+img {
+    width: 100%;
 }
-p
-{
-  font-size: 14px;
-  text-align: center;
+
+p {
+    font-size: 14px;
+    text-align: center;
 }
-select,button
-{
-  width: 80%;
-  margin-left: 2.5em;
-  margin-top: 1em;
-  margin-bottom: 1em;
-  border-radius: 3px;
-  height: 50px;
+
+select, button {
+    width: 80%;
+    margin-left: 2.5em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    border-radius: 3px;
+    height: 50px;
 }
-button
-{
-  background-color: #66CDAA;
-  border-radius: 10px;
-  color: white;
+
+button {
+    background-color: #66CDAA;
+    border-radius: 10px;
+    color: white;
 }
-.galeriearticle a
-{
-  text-decoration: none;
+
+.galeriearticle a {
+    text-decoration: none;
 }
-.galeriearticle section
-{
-  color: black;
+
+.galeriearticle section {
+    color: black;
 }
+
+
 /*END OF THE PAGE PACKAGE 1*/
 
 
+/*PAGE PACKAGE 2*/
+
+.packagelist ul {
+    text-align: left;
+    width: 80%;
+    margin: auto;
+}
+
+.packagelist figcaption {
+    text-align: center;
+    text-decoration: underline;
+    font-size: 18px;
+    margin: 1em;
+}
+
+
+/*END OF THE PAGE PACKAGE 2*/
+
 
 /*PAGE PACKAGE*/
+
+
 /*KEVIN*/
 
 
 /*~~~~~ START OF TABLETTE ~~~~~*/
-@media (min-width: 768px;) {
+
+@media (min-width: 768px;
+) {
     /*start of common rules*/
-
     /*Enc of common rules*/
-
     /*START OF HEADER*/
-
     /*END OF HEADER*/
-
     /*START OF SECTION*/
-
     /*END OF SECTION*/
-
     /*START OF FOOTER*/
-
     /*END OF FOOTER*/
 }
+
 
 /*~~~~~ START OF DESK ~~~~~*/
-@media (min-width: 1024px;) {
+
+@media (min-width: 1024px;
+) {
     /*start of common rules*/
-
     /*Enc of common rules*/
-
     /*START OF HEADER*/
-
     /*END OF HEADER*/
-
     /*START OF SECTION*/
-
     /*END OF SECTION*/
-
     /*START OF FOOTER*/
-
     /*END OF FOOTER*/
 }
-
-
-
-
 
 
 /* ==========================================================================
    Helper classes
    ========================================================================== */
+
 
 /*
  * Hide visually and from screen readers
@@ -223,6 +240,7 @@ button
 .hidden {
     display: none !important;
 }
+
 
 /*
  * Hide only visually, but have it available for screen readers:
@@ -240,14 +258,14 @@ button
     width: 1px;
 }
 
+
 /*
  * Extends the .visuallyhidden class to allow the element
  * to be focusable when navigated to via the keyboard:
  * https://www.drupal.org/node/897638
  */
 
-.visuallyhidden.focusable:active,
-.visuallyhidden.focusable:focus {
+.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus {
     clip: auto;
     height: auto;
     margin: 0;
@@ -256,6 +274,7 @@ button
     width: auto;
 }
 
+
 /*
  * Hide visually and from screen readers, but maintain layout
  */
@@ -263,6 +282,7 @@ button
 .invisible {
     visibility: hidden;
 }
+
 
 /*
  * Clearfix: contain floats
@@ -276,15 +296,17 @@ button
  *    `:before` to contain the top-margins of child elements.
  */
 
-.clearfix:before,
-.clearfix:after {
-    content: " "; /* 1 */
-    display: table; /* 2 */
+.clearfix:before, .clearfix:after {
+    content: " ";
+    /* 1 */
+    display: table;
+    /* 2 */
 }
 
 .clearfix:after {
     clear: both;
 }
+
 
 /* ==========================================================================
    EXAMPLE Media Queries for Responsive Design.
@@ -296,12 +318,10 @@ button
     /* Style adjustments for viewports that meet the condition */
 }
 
-@media print,
-       (-webkit-min-device-pixel-ratio: 1.25),
-       (min-resolution: 1.25dppx),
-       (min-resolution: 120dpi) {
+@media print, (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 1.25dppx), (min-resolution: 120dpi) {
     /* Style adjustments for high resolution devices */
 }
+
 
 /* ==========================================================================
    Print styles.
@@ -310,74 +330,52 @@ button
    ========================================================================== */
 
 @media print {
-    *,
-    *:before,
-    *:after,
-    *:first-letter,
-    *:first-line {
+    *, *:before, *:after, *:first-letter, *:first-line {
         background: transparent !important;
-        color: #000 !important; /* Black prints faster:
+        color: #000 !important;
+        /* Black prints faster:
                                    http://www.sanbeiji.com/archives/953 */
         box-shadow: none !important;
         text-shadow: none !important;
     }
-
-    a,
-    a:visited {
+    a, a:visited {
         text-decoration: underline;
     }
-
     a[href]:after {
         content: " (" attr(href) ")";
     }
-
     abbr[title]:after {
         content: " (" attr(title) ")";
     }
-
     /*
      * Don't show links that are fragment identifiers,
      * or use the `javascript:` pseudo protocol
      */
-
-    a[href^="#"]:after,
-    a[href^="javascript:"]:after {
+    a[href^="#"]:after, a[href^="javascript:"]:after {
         content: "";
     }
-
-    pre,
-    blockquote {
+    pre, blockquote {
         border: 1px solid #999;
         page-break-inside: avoid;
     }
-
     /*
      * Printing Tables:
      * http://css-discuss.incutio.com/wiki/Printing_Tables
      */
-
     thead {
         display: table-header-group;
     }
-
-    tr,
-    img {
+    tr, img {
         page-break-inside: avoid;
     }
-
     img {
         max-width: 100% !important;
     }
-
-    p,
-    h2,
-    h3 {
+    p, h2, h3 {
         orphans: 3;
         widows: 3;
     }
-
-    h2,
-    h3 {
+    h2, h3 {
         page-break-after: avoid;
     }
 }
