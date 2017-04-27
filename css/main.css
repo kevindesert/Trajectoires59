@@ -95,21 +95,78 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-/*start of common rules*/
+/*KEVIN*/
+/*PAGE PACKAGE*/
 
-/*Enc of common rules*/
 
-/*START OF HEADER*/
+/*PAGE PACKAGE 1*/
+h1
+{
+  width: 60%;
+  margin: auto;
+  text-align: center;
+}
+h2
+{
+  font-size: 18px;
+  text-align: center;
+  color: #66CDAA;
+  text-decoration: underline;
+}
+h3
+{
+  font-size: 16px;
+  text-align: center;
+}
+.packColor, .galeriearticle
+{
+  background-color: #66CDAA;
+  border: 1px solid #B5B6B0;
+  border-bottom: none;
+}
+.packColor2
+{
+  border: 1px solid;
+  border-bottom: none;
+}
+img
+{
+  width: 100%;
+}
+p
+{
+  font-size: 14px;
+  text-align: center;
+}
+select,button
+{
+  width: 80%;
+  margin-left: 2.5em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  border-radius: 3px;
+  height: 50px;
+}
+button
+{
+  background-color: #66CDAA;
+  border-radius: 10px;
+  color: white;
+}
+.galeriearticle a
+{
+  text-decoration: none;
+}
+.galeriearticle section
+{
+  color: black;
+}
+/*END OF THE PAGE PACKAGE 1*/
 
-/*END OF HEADER*/
 
-/*START OF SECTION*/
 
-/*END OF SECTION*/
-
-/*START OF FOOTER*/
-
-/*END OF FOOTER*/
+/*PAGE PACKAGE*/
+/*KEVIN*/
 
 
 /*~~~~~ START OF TABLETTE ~~~~~*/
@@ -132,7 +189,7 @@ textarea {
 }
 
 /*~~~~~ START OF DESK ~~~~~*/
-@media (min-width: 10224px;) {
+@media (min-width: 1024px;) {
     /*start of common rules*/
 
     /*Enc of common rules*/
