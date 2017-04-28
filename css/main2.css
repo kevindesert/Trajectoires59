@@ -100,9 +100,6 @@ textarea {
    ========================================================================== */
 
 
-/*KEVIN*/
-
-
 /*COMMON RULES*/
 
 html {
@@ -111,10 +108,14 @@ html {
     width: 100%;
 }
 
-.nomobile
-{
-  display:none;
+* {
+    font-family: 'Oswald', sans-serif;
 }
+
+.nomobile {
+    display: none;
+}
+
 .packagenavbar ul {
     list-style-type: none;
     width: 80%;
@@ -145,7 +146,6 @@ html {
     border: 1px solid #B5B6B0;
     border-bottom: none;
 }
-
 
 .packagepackage li {
     height: 100px;
@@ -299,32 +299,27 @@ button {
 
 @media (min-width: 1024px) {
     /*start of common rules*/
-.yesdesktop
-{
-  display: block;
-}
-
+    .yesdesktop {
+        display: block;
+    }
     img {
         width: 30%;
     }
-    h2
-    {
-      font-size: 24px;
-      color: black;
+    h2 {
+        font-size: 24px;
+        color: black;
     }
-    h3
-    {
-      font-size: 20px;
+    h3 {
+        font-size: 20px;
     }
     select, button {
         width: 15%;
         border-radius: 3px;
         height: 50px;
     }
-    .lorem
-    {
-      width: 50%;
-      text-align: left;
+    .lorem {
+        width: 50%;
+        text-align: left;
     }
     .logo {
         display: flex;
@@ -337,36 +332,29 @@ button {
     /*PAGE PACKAGE*/
     /*PAGE PACKAGE*/
     /*PAGE PACKAGE 1*/
-    .packagepackage
-    {
-      background: url(../img/locationetvente.jpg);
+    .packagepackage {
+        background: url(../img/locationetvente.jpg);
     }
-    .packColor1
-    {
-      display: flex;
-      justify-content: space-between;
-      background-color: white;
+    .packColor1 {
+        display: flex;
+        justify-content: space-between;
+        background-color: white;
     }
-    .packColor1 figure
-    {
-      width: 30%;
+    .packColor1 figure {
+        width: 30%;
     }
-    .packColor1 div
-    {
-      width: 30%;
+    .packColor1 div {
+        width: 30%;
     }
-    .packColor1 img
-    {
-      width: 100%;
+    .packColor1 img {
+        width: 100%;
     }
-    .packColor1 h3
-    {
-      width: 50%;
-      text-align: center;
+    .packColor1 h3 {
+        width: 50%;
+        text-align: center;
     }
-    .packColor1 p
-    {
-      width: 100%;
+    .packColor1 p {
+        width: 100%;
     }
     /*PAGE PACKAGE 2*/
     /*PAGE PACKAGE 2*/

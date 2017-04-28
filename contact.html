@@ -7,7 +7,7 @@
     <title></title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <!-- Place favicon.ico in the root directory -->
 
@@ -17,38 +17,90 @@
 </head>
 
 <body>
-    <h1>Faites nous signe !</h1>
-    <form action="index.html" method="post">
-      <div class="conteneurST">
-      <div class="colpST">
-        <label>Nom :</label><br>
-        <input type="text" name="Nom" value="" required="required"><br>
-        <label>Prénom :</label><br>
-        <input type="text" name="Prénom" value="" required="required"><br>
-        <label>Email :</label><br>
-        <input type="text" name="Email" value="" required="required"><br>
-        <label>Sujet :</label><br>
-        <textarea rows="3" cols="16" type="text" name="Sujet" value="" required="required"></textarea><br>
-      </div>
-      <div class="colpST">
-      <label>Message :</label><br>
-      <textarea name="text" rows="8" cols="50" required="required"> Aliquam sagittis nibh ultrices ex luctus, quis bibendum nunc facilisis.
-        Vestibulum porta nec erat in iaculis.</textarea>
-      </div><br>
-    </div>
-      <div>
-        <input class="envoyer" type="submit" name="envoyer" value="envoyer">
-      </div><br>
+    <header class="generalHeader">
+        <figure class="headerlogo">
+            <a href="index.html">
+                <img src="img/trajectoires.png" alt="logo de trajectoires">
+            </a>
+        </figure>
 
-      <div>
-        <h3>Trouvez nos locaux !</h3>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m0!3m2!1sfr!2sfr!4v1493299469251!6m8!1m7!1sx2dn3KXhii72tijPh_fUKg!2m2!1d50.69134949452021!2d3.174025190369406!3f170.5321174436474!4f-3.443514912278175!5f0.7820865974627469" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </header>
 
-      </div>
+    <!-- END OF HEADER -->
+
+    <!-- START OF ASIDE -->
+
+    <aside class="generalAside">
+        <nav>
+            <ul>
+                <li>
+                    <a href="lateam.html">
+                        <p>LA TEAM</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="package.html">
+                        <p>PACKAGE</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="esprit.html">
+                        <p>L'ESPRIT DES LIEUX</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="partenaire.html">
+                        <p>ILS NOUS AIDENT</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="contact.html">
+                        <p>FAITES-NOUS SIGNE</p>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+    </aside>
+
+    <!-- END OF ASIDE -->
+    <section>
+        <h1>Faites nous signe !</h1>
+        <form action="index.html" method="post">
+            <div class="conteneurST">
+                <div class="colpST">
+                    <label>Nom :</label><br>
+                    <input type="text" name="Nom" value="" required="required"><br>
+                    <label>Prénom :</label><br>
+                    <input type="text" name="Prénom" value="" required="required"><br>
+                    <label>Email :</label><br>
+                    <input type="text" name="Email" value="" required="required"><br>
+                    <label>Sujet :</label><br>
+                    <textarea rows="3" cols="16" type="text" name="Sujet" value="" required="required"></textarea><br>
+                </div>
+                <div class="colpST">
+                    <label>Message :</label><br>
+                    <textarea name="text" rows="8" cols="50" required="required"> Aliquam sagittis nibh ultrices ex luctus, quis bibendum nunc facilisis.
+      Vestibulum porta nec erat in iaculis.</textarea>
+                </div><br>
+            </div>
+            <div>
+                <input class="envoyer" type="submit" name="envoyer" value="envoyer">
+            </div><br>
+
+            <div>
+                <h3>Trouvez nos locaux !</h3>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m0!3m2!1sfr!2sfr!4v1493299469251!6m8!1m7!1sx2dn3KXhii72tijPh_fUKg!2m2!1d50.69134949452021!2d3.174025190369406!3f170.5321174436474!4f-3.443514912278175!5f0.7820865974627469" width="600" height="450" frameborder="0"
+                    style="border:0" allowfullscreen></iframe>
+
+            </div>
 
 
 
-    </form>
+        </form>
 
-  </body>
+    </section>
+
+</body>
+
 </html>
