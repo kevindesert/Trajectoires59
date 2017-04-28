@@ -1,0 +1,95 @@
+.h1team {
+    text-align: center;
+    color: #778899;
+    font-weight: bold;
+}
+
+.pteam {
+    text-align: center, justify;
+}
+
+.pteam2 {
+    text-align: center;
+    background-color: #66CDAA;
+}
+
+.dirigeantST {
+    float: left;
+    display: inline;
+    text-align: left, justify;
+    width: 50%;
+    background-color: #66CDAA;
+}
+
+.salarieST {
+    text-align: right, justify;
+    float: right;
+    display: inline;
+    width: 50%;
+    background-color: #66CDAA;
+}
+
+.porteST {
+    height: 300px;
+    width: 90%;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px;
+}
+
+.porte2ST {
+    text-align: center;
+}
+
+.adminST {
+    float: left;
+    display: inline;
+    height: 200px;
+    width: auto;
+    box-shadow: 5px 5px 5px;
+}
+
+.photogroupe {
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px;
+}
+
+
+/* Roll over de la photo en bas de la page*/
+
+figure {
+    display: inline-block;
+    position: relative;
+    width: 90%;
+    height: 300px;
+    overflow: hidden;
+}
+
+figcaption {
+    position: absolute;
+    padding: 10px;
+    margin: 0;
+    left: 0;
+    right: 0;
+    height: 2.6em;
+    bottom: -4em;
+    text-align: center;
+    font-family: Georgia, Times, serif;
+    transition: all .7s;
+}
+
+figure:hover figcaption {
+    bottom: 0;
+    background: #000;
+    background: rgba(255, 255, 255, 0.7);
+    color: #555;
+}
+
+
+/*Fin du roll over */
+
+.h3team {
+    text-align: center;
+    text-decoration: underline;
+}

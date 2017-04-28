@@ -1,0 +1,306 @@
+/*~~~~~~~~~~ END OF GENERAL HEADER ~~~~~~~~~~*/
+
+.generalHeader .headerlogo {
+    text-align: center;
+}
+
+.generalHeader .headerlogo img {
+    transition: 1s;
+}
+
+.generalHeader figure img:hover {
+    transition: 1s;
+    border-radius: 100%;
+}
+
+/*~~~~~~~~~~ END OF GENERAL HEADER ~~~~~~~~~~*/
+
+
+
+.generalAside nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+}
+
+.generalAside nav ul li {
+    text-align: center;
+    background-color: #66CDAA;
+    margin: 5px;
+    width: 27%;
+    font-size: .8em;
+    border-radius: 5px;
+}
+
+.generalAside nav ul li a {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.generalAside nav ul li a p {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.generalAside nav ul li:hover {
+    background-color: #B5B6B0;
+}
+.none
+{
+  display: none;
+}
+
+
+/*END OF ASIDE*/
+
+#slideshow {
+    position: relative;
+    width: 1100px;
+    height: 450px;
+    padding: 15px;
+    margin: 0 auto 2em;
+    border: 1px solid #ddd;
+    background: #FFF;
+    /* CSS3 effects */
+    background: linear-gradient(#FFF, #FFF 20%, #EEE 80%, #DDD);
+    border-radius: 2px 2px 2px 2px;
+    box-shadow: 0 0 3px rgba(0,0,0, 0.2);
+}
+
+/* avanced box-shadow
+ * tutorial @
+ * https://www.creativejuiz.fr/blog/les-tutoriels/ombre-avancees-avec-css3-et-box-shadow
+*/
+#slideshow:before,
+#slideshow:after {
+    position: absolute;
+    bottom:16px;
+    z-index: -10;
+    width: 50%;
+    height: 20px;
+    content: " ";
+    background: rgba(0,0,0,0.1);
+    border-radius: 50%;
+    box-shadow: 0 0 3px rgba(0,0,0, 0.4), 0 20px 10px rgba(0,0,0, 0.7);
+}
+#slideshow:before {
+    left:0;
+    transform: rotate(-4deg);
+}
+#slideshow:after {
+    right:0;
+    transform: rotate(4deg);
+}
+
+/* gestion des dimensions et débordement du conteneur */
+#slideshow .container {
+    position:relative;
+    width: 1100px;
+    height: 450px;
+    overflow: hidden;
+}
+
+/* on prévoit un petit espace gris pour la timeline */
+#slideshow .container:after {
+    position:absolute;
+    bottom: 0; left:0;
+    content: " ";
+    width: 100%;
+    height: 1px;
+    background: #999;
+}
+/*
+   le conteneur des slides
+   en largeur il fait 100% x le nombre de slides
+*/
+#slideshow .slider {
+    position: absolute;
+    left:0; top:0;
+    width: 600%;
+    height: 310px;
+}
+
+/* petit effet de vignette sur les images */
+#slideshow figure:after {
+    position: absolute;
+    display:block;
+    content: " ";
+    top:0; left:0;
+    width: 100%; height: 100%;
+    box-shadow: 0 0 65px rgba(0,0,0, 0.5) inset;
+}
+
+/* styles de nos légendes */
+#slideshow figcaption {
+    position: absolute;
+    left:0; right:0; bottom: 90px;
+    padding: 20px;
+    margin:0px;
+    border-top: 1px solid rgb(225,225,225);
+    text-align:center;
+    letter-spacing: 0.05em;
+    word-spacing: 0.05em;
+    font-family: Georgia, Times, serif;
+    background: #fff;
+    background: rgba(255,255,255,0.7);
+    color: #555;
+    text-shadow: -1px -1px 0
+    rgba(255,255,255,0.3);
+
+}
+
+/* fonction d'animation, n'oubliez pas de prefixer ! */
+@keyframes slider {
+    0%, 20%, 100%    { left: 0 }
+    25%, 45%        { left: -100% }
+    50%, 70%        { left: -200% }
+    75%, 95%        { left: -300% }
+    95%, 100%        { left: -300% }
+}
+
+/* complétez le sélecteur : */
+#slideshow .slider {
+    /* ... avec la propriété animation */
+    animation: slider 20s infinite;
+}
+
+#timeline {
+    position: absolute;
+    background: #D81F2A;
+    bottom: 15px;
+    left: 15px;
+    height: 1px;
+    background: rgb(214,98,13);
+    background: rgba(214,98,13,.8);
+    width: 0;
+    /* fonction d'animation */
+    animation: timeliner 20s infinite;
+}
+
+@keyframes timeliner {
+    0%, 25%, 50%, 75%, 100%    { width: 0;        }
+    20%, 45%, 70%, 90%        { width: 1100px;    }
+}
+
+
+/* ajouter à l'élément : */
+#slideshow figcaption {
+	/* ... la propriété animation */
+	animation: figcaptionner 20s infinite;
+}
+
+#slideshow .commands {
+    position: absolute;
+    top: 45%;
+    padding: 5px 13px;
+    border-bottom:0;
+    font-size: 1.3em;
+    color: #aaa;
+    text-decoration:none;
+    background-color: #eee;
+    background-image: linear-gradient(#fff,#ddd);
+    text-shadow: 0 0 1px #aaa;
+    border-radius: 50%;
+    box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+}
+
+figure {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    margin: 0;
+}
+
+img, figcaption
+{
+    transition: all .25s ease;
+}
+img {
+    display: block;
+}
+figcaption {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: .5em;
+    background: #000;
+    background: rgba(0, 0, 0, .75);
+    color: #fff;
+    opacity: 0;
+}
+
+/*demo slider avec input radio 1*/
+
+input[type=radio]{display:none}/*on cache tous les input*/
+
+.cadre-demo1 label{position:relative;overflow:hidden;cursor:pointer}/*on pointe tous les labels*/
+
+.cadre-demo1{
+overflow:hidden;
+position:relative;
+text-align:center;
+min-height:540px;
+max-width:960px;
+margin:20px auto
+}
+
+
+.photos-mini{
+display:inline-block;
+overflow:hidden}
+
+.miniature{
+float:left;
+width:120px;
+margin:auto;
+}
+
+.cadre-demo1 label,
+.miniature label img{
+  display:block;
+  width: 60px;
+  height: 60px;
+}
+
+
+.fenetre{
+width:500px;
+height:400px;
+object-fit:contain;
+position:absolute;
+top:130px;
+transition:.6s;
+left:-100%;
+opacity:0}
+
+.fen:checked~.fenetre{
+left:50%;
+transform:translatex(-50%);
+-webkit-transform:translatex(-50%);
+opacity:1}
+
+figcaption{
+text-align:center;
+position:absolute;
+top:100px;
+left:50%;
+width:500px;
+transition:.6s;
+transform:translatex(-50%);
+-webkit-transform:translatex(-50%);
+opacity:0;
+height:15px;
+line-height:20px;
+color:white;
+background:hsla(0,0%,0%,.8)}
+
+.fen:checked~figcaption{
+
+transition:2s;
+opacity:1}

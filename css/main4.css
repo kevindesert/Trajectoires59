@@ -1,0 +1,38 @@
+h1 {
+  text-align: center;
+}
+
+body {
+  background-color: #66CDAA;
+}
+
+label {
+  font-size: 25px;
+}
+
+form {
+  text-align: center;
+}
+
+.conteneurST {
+  overflow: hidden;
+}
+
+.colpST {
+  width: 50%;
+  float: left;
+  display: inline;
+}
+
+.envoyer {
+  font-size: 20px;
+}
+
+iframe {
+  height: 400px;
+  width : 100%;
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+/* Styles pour cette Media Queries */
+}

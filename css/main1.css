@@ -1,12 +1,10 @@
 /*! HTML5 Boilerplate v5.3.0 | MIT License | https://html5boilerplate.com/ */
 
-
 /*
  * What follows is the result of much research on cross-browser styling.
  * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
  * Kroc Camen, and the H5BP dev community and team.
  */
-
 
 /* ==========================================================================
    Base styles: opinionated defaults
@@ -17,7 +15,6 @@ html {
     font-size: 1em;
     line-height: 1.4;
 }
-
 
 /*
  * Remove text-shadow in selection highlight:
@@ -37,7 +34,6 @@ html {
     text-shadow: none;
 }
 
-
 /*
  * A better looking default horizontal rule
  */
@@ -51,17 +47,20 @@ hr {
     padding: 0;
 }
 
-
 /*
  * Remove the gap between audio, canvas, iframes,
  * images, videos and the bottom of their containers:
  * https://github.com/h5bp/html5-boilerplate/issues/440
  */
 
-audio, canvas, iframe, img, svg, video {
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
     vertical-align: middle;
 }
-
 
 /*
  * Remove default fieldset styles.
@@ -73,7 +72,6 @@ fieldset {
     padding: 0;
 }
 
-
 /*
  * Allow only vertical resizing of textareas.
  */
@@ -81,7 +79,6 @@ fieldset {
 textarea {
     resize: vertical;
 }
-
 
 /* ==========================================================================
    Browser Upgrade Prompt
@@ -94,195 +91,286 @@ textarea {
     padding: 0.2em 0;
 }
 
-
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
 
+/*start of common rules*/
+* {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 900;
+}
 
-/*KEVIN*/
-
-
-/*COMMON RULES*/
-
-html {
+figure {
     margin: 0;
     padding: 0;
 }
 
-.packagenavbar ul {
+ul {
     list-style-type: none;
-    width: 80%;
-    margin: auto;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+/*Enc of common rules*/
+
+/*START OF HEADER*/
+
+/*~~~~~~~~~~ START OF SECTION OF HEADER ~~~~~~~~~~*/
+
+.indexHeader {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.indexHeader figure {
+    align-self: center;
+}
+
+.indexHeader figure a {
+    width: 100%;
+    height: 100%;
+}
+
+.indexHeader figure img {
+    width: 600px;
+}
+
+/*~~~~~~~~~~ END OF SECTION OF HEADER ~~~~~~~~~~*/
+
+
+/*~~~~~~~~~~ END OF GENERAL HEADER ~~~~~~~~~~*/
+
+.generalHeader figure {
     text-align: center;
 }
 
-.packagenavbar a {
-    text-decoration: none;
+.generalHeader figure img {
+    transition: 1s;
 }
 
-.packagenavbar li {
-    text-decoration: none;
-    color: white;
-    background-color: #6ad5b1;
-    margin: 1em;
-    margin-right: 3em;
+.generalHeader figure img:hover {
+    transition: 1s;
+    border-radius: 100%;
+}
+
+/*~~~~~~~~~~ END OF GENERAL HEADER ~~~~~~~~~~*/
+
+
+/*END OF HEADER*/
+
+/*START OF ASIDE*/
+
+.generalAside nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+}
+
+.generalAside nav ul li {
+    text-align: center;
+    background-color: #66CDAA;
+    margin: 5px;
+    width: 27%;
+    font-size: .8em;
     border-radius: 5px;
 }
 
-.packagenavbar li:hover {
-    color: black;
+.generalAside nav ul li a {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.generalAside nav ul li a p {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.generalAside nav ul li:hover {
     background-color: #B5B6B0;
 }
 
-.packColor, .galeriearticle {
-    background-color: #66CDAA;
-    border: 1px solid #B5B6B0;
-    border-bottom: none;
-}
 
 
-/*PAGE PACKAGE*/
+/*END OF ASIDE*/
 
+/*START OF SECTION*/
 
-/*PAGE PACKAGE 1*/
+/*~~~~~~~~~~ START OF SECTION OF INDEX ~~~~~~~~~~*/
 
-h1 {
-    width: 60%;
-    margin: auto;
-    text-align: center;
-}
-
-h2 {
-    font-size: 18px;
-    text-align: center;
-    color: #66CDAA;
-    text-decoration: underline;
-}
-
-h3 {
-    font-size: 16px;
-    text-align: center;
-}
-
-.packColor2 {
-    border: 1px solid;
-    border-bottom: none;
-}
-
-img {
+.indexSection div {
+    display: flex;
     width: 100%;
 }
 
-p {
-    font-size: 14px;
-    text-align: center;
+.indexSection div article {
+    width: 50%;
+    height: 200px;
+    display: flex;
+    align-content: center;
 }
 
-select, button {
-    width: 80%;
-    margin-left: 2.5em;
-    margin-top: 1em;
-    margin-bottom: 1em;
-    border-radius: 3px;
-    height: 50px;
+.indexSection .indexSectionContact article {
+    width: 100%;
 }
 
-button {
+.indexSection div article a {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.indexSection h2 {
+    margin: auto;
+    z-index: 2;
+    color: #66CDAA;
+    font-size: 30px;
+    text-shadow: black 4px 4px;
+}
+
+.lateam {
+    background: url(../img/banniere1.jpg) center;
+}
+
+.package {
+    background: url(../img/banniere2.jpg) center;
+}
+
+.esprit {
+    background: url(../img/banniere3.jpg) center;
+}
+
+.partenaire {
+    background: url(../img/banniere4.jpg) center;
+}
+
+.contact {
+    background: url(../img/banniere5.jpg) center;
+}
+
+.indexSection article {
+    opacity: .5;
+}
+
+.indexSection article:hover {
+    opacity: 1;
+    transition: 1s;
+}
+
+/*~~~~~~~~~~ END OF SECTION OF INDEX ~~~~~~~~~~*/
+
+.generalSection {
+    height: 100vh;
+    background-color: black;
+}
+
+/*END OF SECTION*/
+
+/*START OF FOOTER*/
+
+.generalFooter {
+    display: flex;
+    justify-content: center;
+    align-content: center;
     background-color: #66CDAA;
-    border-radius: 10px;
-    color: white;
+    height: 75px;
 }
 
-.galeriearticle a {
-    text-decoration: none;
-}
-
-.galeriearticle section {
-    color: black;
-}
-
-
-/*END OF THE PAGE PACKAGE 1*/
-
-
-/*PAGE PACKAGE 2*/
-
-.packagelist ul {
-    text-align: left;
-    width: 80%;
-    margin: auto;
-}
-
-.packagelist figcaption {
+.generalFooter p {
+    background-color: #66CDAA;
     text-align: center;
-    text-decoration: underline;
-    font-size: 18px;
-    margin: 1em;
+    margin: auto 30px;
+    width: 40px;
+    height: 40px;
+    border: 2px solid black;
+    border-radius: 100%
 }
 
-
-/*END OF THE PAGE PACKAGE 2*/
-
-
-/*PAGE PACKAGE 3*/
-
-.selfgarage p {
-    width: 90%;
-    text-align: center;
-    margin: auto;
+.generalFooter .fa {
+    font-size: 30px;
+    padding: 5px;
 }
 
-
-/*END OF THE PAGE PACKAGE 3*/
-
-
-/*PAGE PACKAGE 4*/
-
-
-/*END OF THE PAGE PACKAGE 4*/
-
-
-/*PAGE PACKAGE*/
-
-
-/*KEVIN*/
+.generalFooter p:hover {
+    background-color: #B5B6B0;;
+}
+/*END OF FOOTER*/
 
 
 /*~~~~~ START OF TABLETTE ~~~~~*/
-
-@media (min-width: 768px;
-) {
+@media (min-width: 768px) {
     /*start of common rules*/
+
     /*Enc of common rules*/
+
     /*START OF HEADER*/
+
     /*END OF HEADER*/
+
     /*START OF SECTION*/
+
     /*END OF SECTION*/
+
     /*START OF FOOTER*/
+
     /*END OF FOOTER*/
 }
-
 
 /*~~~~~ START OF DESK ~~~~~*/
-
-@media (min-width: 1024px;
-) {
+@media (min-width: 1024px) {
     /*start of common rules*/
+
     /*Enc of common rules*/
+
     /*START OF HEADER*/
+
     /*END OF HEADER*/
+
+    /*START OF ASIDE*/
+
+.generalAside nav ul {
+    position: fixed;
+    flex-direction: column;
+}
+
+.generalAside nav ul li {
+    width: auto;
+    height: 45px;
+    margin-bottom: 20px;
+}
+
+
+
+
+
+    /*END OF ASIDE*/
+
     /*START OF SECTION*/
+
     /*END OF SECTION*/
+
     /*START OF FOOTER*/
+
     /*END OF FOOTER*/
 }
+
+
+
+
 
 
 /* ==========================================================================
    Helper classes
    ========================================================================== */
-
 
 /*
  * Hide visually and from screen readers
@@ -291,7 +379,6 @@ button {
 .hidden {
     display: none !important;
 }
-
 
 /*
  * Hide only visually, but have it available for screen readers:
@@ -309,14 +396,14 @@ button {
     width: 1px;
 }
 
-
 /*
  * Extends the .visuallyhidden class to allow the element
  * to be focusable when navigated to via the keyboard:
  * https://www.drupal.org/node/897638
  */
 
-.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus {
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
     clip: auto;
     height: auto;
     margin: 0;
@@ -325,7 +412,6 @@ button {
     width: auto;
 }
 
-
 /*
  * Hide visually and from screen readers, but maintain layout
  */
@@ -333,7 +419,6 @@ button {
 .invisible {
     visibility: hidden;
 }
-
 
 /*
  * Clearfix: contain floats
@@ -347,17 +432,15 @@ button {
  *    `:before` to contain the top-margins of child elements.
  */
 
-.clearfix:before, .clearfix:after {
-    content: " ";
-    /* 1 */
-    display: table;
-    /* 2 */
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
 }
 
 .clearfix:after {
     clear: both;
 }
-
 
 /* ==========================================================================
    EXAMPLE Media Queries for Responsive Design.
@@ -369,10 +452,12 @@ button {
     /* Style adjustments for viewports that meet the condition */
 }
 
-@media print, (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 1.25dppx), (min-resolution: 120dpi) {
+@media print,
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 1.25dppx),
+       (min-resolution: 120dpi) {
     /* Style adjustments for high resolution devices */
 }
-
 
 /* ==========================================================================
    Print styles.
@@ -381,52 +466,74 @@ button {
    ========================================================================== */
 
 @media print {
-    *, *:before, *:after, *:first-letter, *:first-line {
+    *,
+    *:before,
+    *:after,
+    *:first-letter,
+    *:first-line {
         background: transparent !important;
-        color: #000 !important;
-        /* Black prints faster:
+        color: #000 !important; /* Black prints faster:
                                    http://www.sanbeiji.com/archives/953 */
         box-shadow: none !important;
         text-shadow: none !important;
     }
-    a, a:visited {
+
+    a,
+    a:visited {
         text-decoration: underline;
     }
+
     a[href]:after {
         content: " (" attr(href) ")";
     }
+
     abbr[title]:after {
         content: " (" attr(title) ")";
     }
+
     /*
      * Don't show links that are fragment identifiers,
      * or use the `javascript:` pseudo protocol
      */
-    a[href^="#"]:after, a[href^="javascript:"]:after {
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
         content: "";
     }
-    pre, blockquote {
+
+    pre,
+    blockquote {
         border: 1px solid #999;
         page-break-inside: avoid;
     }
+
     /*
      * Printing Tables:
      * http://css-discuss.incutio.com/wiki/Printing_Tables
      */
+
     thead {
         display: table-header-group;
     }
-    tr, img {
+
+    tr,
+    img {
         page-break-inside: avoid;
     }
+
     img {
         max-width: 100% !important;
     }
-    p, h2, h3 {
+
+    p,
+    h2,
+    h3 {
         orphans: 3;
         widows: 3;
     }
-    h2, h3 {
+
+    h2,
+    h3 {
         page-break-after: avoid;
     }
 }
