@@ -1,0 +1,84 @@
+* {
+    font-family: 'Oswald', sans-serif;
+}
+
+/*~~~~~~~~~~ END OF GENERAL HEADER ~~~~~~~~~~*/
+
+.generalHeader .headerlogo {
+    text-align: center;
+}
+
+.generalHeader .headerlogo img {
+    transition: 1s;
+}
+
+.generalHeader figure img:hover {
+    transition: 1s;
+    border-radius: 100%;
+}
+
+.headerlogo {
+    display: flex;
+    justify-content: center;
+}
+
+
+/*~~~~~~~~~~ END OF GENERAL HEADER ~~~~~~~~~~*/
+
+.generalAside nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+    margin-top: 3em;
+}
+
+.generalAside nav ul li {
+    text-align: center;
+    background-color: #66CDAA;
+    margin: 5px;
+    width: 15%;
+    font-size: .8em;
+    border-radius: 5px;
+    list-style-type: none;
+    height: 25px;
+}
+
+.generalAside nav ul li a {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.generalAside nav ul li a p {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.generalAside nav ul li:hover {
+    background-color: #B5B6B0;
+}
+
+
+/*END OF ASIDE*/
+h1{
+  color: black;
+}
+img{
+  width: 136px;
+  height: 150%;
+}
+
+a{
+  margin: auto;
+}
+body
+{
+  background-color: #B5B6B0;
+}
