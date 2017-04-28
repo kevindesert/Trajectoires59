@@ -1,6 +1,10 @@
 * {
     font-family: 'Oswald', sans-serif;
 }
+a {
+    color: black;
+    text-decoration: none;
+}
 /*~~~~~~~~~~ END OF GENERAL HEADER ~~~~~~~~~~*/
 
 .generalHeader .headerlogo {
@@ -98,7 +102,32 @@ iframe {
   height: 400px;
   width : 100%;
 }
+/*START OF FOOTER*/
 
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
-/* Styles pour cette Media Queries */
+.generalFooter {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background-color: #66CDAA;
+    height: 75px;
 }
+
+.generalFooter p {
+    background-color: #66CDAA;
+    text-align: center;
+    margin: auto 30px;
+    width: 40px;
+    height: 40px;
+    border: 2px solid black;
+    border-radius: 100%
+}
+
+.generalFooter .fa {
+    font-size: 30px;
+    padding: 5px;
+}
+
+.generalFooter p:hover {
+    background-color: #B5B6B0;;
+}
+/*END OF FOOTER*/
